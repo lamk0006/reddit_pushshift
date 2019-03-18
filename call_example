@@ -1,3 +1,4 @@
+    pattern_filter = "*2007*&*2008*"
     reddit_repo = reddit()
     print('---  Reddit Submissions')
     reddit_repo.download_files(pattern_filter,"https://files.pushshift.io/reddit/submissions/",dir_of_file,'s')
