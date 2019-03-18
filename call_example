@@ -1,0 +1,11 @@
+    reddit_repo = reddit()
+    print('---  Reddit Submissions')
+    reddit_repo.download_files(pattern_filter,"https://files.pushshift.io/reddit/submissions/",dir_of_file,'s')
+    print('---  Reddit Comments')
+    reddit_repo.download_files(pattern_filter,"https://files.pushshift.io/reddit/comments/",dir_of_file,'c')
+  
+    decompress_repo = decompress()
+    print('---  Reddit Submissions')    
+    decompress_repo.decompress_file(dir_of_file,'s')
+    print('---  Reddit Comments')    
+    decompress_repo.decompress_file(dir_of_file,'c')
